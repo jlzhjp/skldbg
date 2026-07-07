@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter skldbg-desktop dev",
-    "build": "pnpm --filter skldbg-desktop build",
-    "start": "pnpm --filter skldbg-desktop start",
-    "desktop": "pnpm --filter skldbg-desktop",
+    "dev": "pnpm --filter desktop dev",
+    "build": "pnpm --filter desktop build",
+    "start": "pnpm --filter desktop start",
+    "desktop": "pnpm --filter desktop",
     "format": "pnpm --recursive exec oxfmt --write .",
     "format:check": "pnpm --recursive exec oxfmt --check ."
   },
