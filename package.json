@@ -1,0 +1,23 @@
+{
+  "name": "skldbg",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter skldbg-desktop dev",
+    "build": "pnpm --filter skldbg-desktop build",
+    "start": "pnpm --filter skldbg-desktop start",
+    "desktop": "pnpm --filter skldbg-desktop",
+    "format": "pnpm --recursive exec oxfmt --write .",
+    "format:check": "pnpm --recursive exec oxfmt --check ."
+  },
+  "devDependencies": {
+    "oxfmt": "^0.57.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.8.0",
+      "onFail": "download"
+    }
+  }
+}
