@@ -1,4 +1,5 @@
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 
 const productionCsp = [
@@ -28,6 +29,7 @@ const developmentCsp = [
 export default defineConfig(({ command }) => ({
   base: "./",
   plugins: [
+    tailwindcss(),
     react(),
     {
       name: "skldbg-csp",
